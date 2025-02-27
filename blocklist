@@ -10,8 +10,8 @@
 281020	mix of src and ports
 276209	simply did not apply
 275741	premature EOF
-270166	premature EOF
-269133	claims ENOEXIST, but it definitely does
+270166	premature EOF TODO test case for single patch
+269133	claims ENOEXIST, but it definitely does; failed even with rebase
 265714	premature EOF
 264729	premature EOF
 263406	premature EOF
@@ -146,22 +146,150 @@
 
 285040	claims ENOEXIST, but it definitely does, even after rebase
 284995	premature EOF
-284954	files/?  TODO
+284954	files/ ?
 284845	premature EOF
-284778	TODO
+284778	files/ ?
 284529	mix of src and ports
-284434	TODO
-284353	TODO
+284434	files/ ?
 284298	not os.path.isfile( /dev/null ) TODO
 284245	premature EOF
 284114	TODO files/?
 284100	mix of src and ports
 
-# all 2024+ (not yet logged)
+# all 2024
 
-# all 2023+ (not yet logged)
+283724	premature EOF
+283717	premature EOF
+283671	premature EOF
+283234	ENOEXIST
+282797	ENOEXIST
+282403	ENOEXIST
+282259	ENOEXIST
+282245	premature EOF
+282175	premature EOF
+282139	ENOEXIST
+282062	premature EOF
+281892	premature EOF
+281657	ENOEXIST
+281207	files/ ?
+281152	ENOEXIST
+281118	ENOEXIST
+280610	premature EOF
+280486	premature EOF
+280431	ENOEXIST
+280339	ENOEXIST
+280310	ENOEXIST
+280275	src and ports mixed
+280203	ENOEXIST
+279864	ENOEXIST
+279639	ENOEXIST
+279627	files/ ?
+279247	ENOEXIST
+279034	ENOEXIST
+278790	src and ports
+278781	ENOEXIST
+278730	files/ ?
+278648	one Makefile
+278586	files/ ?
+278525	premature EOF
+278518	no valid patches
+278487	premature EOF
+278344	ENOEXIST
+278246	ENOEXIST
+278050	files/ ?
+277911	files/
+277821	ENOEXIST, confirmed
+277643	premature EOF
+277552	premature EOF
+277510	ENOEXIST
+277008	premature EOF
+276459	premature EOF
+276415	ENOEXIST
+
+# all 2023
+
+275729	ENOEXIST
+275626	ENOEXIST
+275566	premature EOF
+275564	ENOEXIST
+275391	claims ENOEXIST, but it definitely does
+275304	files/ ?
+275167	single Makefile
+275061	ENOEXIST TODO
+275026	/usr/local instead of in portsdir
+274988	premature EOF
+274978	premature EOF
+274505	"treewide"
+274412	premature EOF
+274134	ENOEXIST
+274099	only first attachment TODO
+273869	premature EOF
+273767	premature EOF
+273688	files/ ?
+273569	files/ ?
+273460	ENOEXIST
+273088	periodic/
+272956	confusing
+272511	some kind of commit remnant? TODO
+272484	single Makefile
+272427	premature EOF
+272203	src and ports
+272118	premature EOF
+272030	src and ports
+271836	ENOEXIST
+271781	one Makefile?
+271668	files/ ?
+271572	ENOEXIST
+271285	ENOEXIST
+271095	files/ ?
+271081	files/ ?
+271013	confusing TODO
+270963	ENOEXIST
+270166	premature EOF
+270090	files/ ?
+269739	premature EOF
+269735	premature EOF
+269719	premature EOF
+269637	premature EOF and ENOEXIST
+269473	premature EOF
+269306	premature EOF
+269292	ENOEXIST
+269242	premature EOF
+269234	ENOEXIST and EOF
+269124	files/ ?
+269025	premature EOF
+268961	files/ ?
+268750	files/ ?
+
+# all 2022
+
+268686	ENOEXIST
+268508	premature EOF
+268285	ENOEXIST
+268194	premature EOF
+268186	premature EOF
+268018	premature EOF
+267938	ENOEXIST
+267825	ENOEXIST
+267726	files/ ?
+267606	files/ ?
+267270	ENOEXIST even though it does
+267249	premature EOF
+267245	premature EOF
+266606	ENOEXIST
+266357	ENOEXIST
+266348	ENOEXIST
+266247	complex TODO
+265714	premature EOF
+265685	premature EOF
+265562	premature EOF
+265559	premature EOF
+265558	premature EOF
+265557	premature EOF
+265317	one Makefile TODO
 
 # usb
+# at some point back in history, these mean nothing
 
 261912	file does not exist TODO
 234469	no valid patches
