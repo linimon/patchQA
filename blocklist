@@ -132,6 +132,25 @@
 160530	premature EOF
 100322	claims ENOEXIST, but it definitely does
 
+# usb
+# at some point back in history, these mean nothing
+
+261912	file does not exist TODO
+234469	no valid patches
+142957	no valid patches
+137190	no valid patches
+137189	premature EOF
+137129	no valid patches
+134193	no valid patches
+119227	premature EOF
+118485	inline patch
+117938	TODO
+117911	TODO
+115935	no valid patches
+91538	TODO
+83863	no valid patches
+59698	TODO
+
 # wireless
 
 265147	file no longer exists
@@ -287,22 +306,3 @@
 265558	premature EOF
 265557	premature EOF
 265317	one Makefile TODO
-
-# usb
-# at some point back in history, these mean nothing
-
-261912	file does not exist TODO
-234469	no valid patches
-142957	no valid patches
-137190	no valid patches
-137189	premature EOF
-137129	no valid patches
-134193	no valid patches
-119227	premature EOF
-118485	inline patch
-117938	TODO
-117911	TODO
-115935	no valid patches
-91538	TODO
-83863	no valid patches
-59698	TODO
