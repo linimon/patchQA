@@ -140,18 +140,27 @@ if ( False ):
 #
 # just one year.  already done as doit.2024.out.
 # https://bugs.freebsd.org/bugzilla/buglist.cgi?chfield=%5BBug%20creation%5D&chfieldto=Now&f1=attachments.ispatch&f2=creation_ts&f3=creation_ts&list_id=811267&o1=equals&o2=greaterthaneq&o3=lessthan&order=Importance&query_format=advanced&resolution=---&v1=1&v2=2024-01-01&v3=2025-01-01
+#bugParms = \
+#'&f1=attachments.ispatch' \
+#'&v1=1' \
+#'&f2=creation_ts' \
+#'&o1=equals' \
+#'&o2=greaterthaneq' \
+#'&v2=2023-01-01' \
+#'&f3=creation_ts' \
+#'&o3=lessthan' \
+#'&v3=2024-01-01' \
+#'&query_format=advanced' \
+#'&resolution=---'
+#
+# just one assignee -- has patches.
 bugParms = \
 '&f1=attachments.ispatch' \
 '&v1=1' \
-'&f2=creation_ts' \
-'&o1=equals' \
-'&o2=greaterthaneq' \
-'&v2=2023-01-01' \
-'&f3=creation_ts' \
-'&o3=lessthan' \
-'&v3=2024-01-01' \
+'&assigned_to=linimon%40FreeBSD.org' \
 '&query_format=advanced' \
 '&resolution=---'
+#
 #
 # 20250216: new port with devel/Makefile: devel/Makefile not patched TODO
 #bugParms = '284703'
