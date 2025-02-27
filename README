@@ -1,0 +1,72 @@
+FreeBSD Bugzilla Patch QA scripts (beta release).
+
+This code allows downloading patches from one or more FreeBSD Bugzilla
+PRs and applying them to a local repo.
+
+This code relies on upstream code from the following git repository:
+
+  https://github.com/conan-io/python-patch-ng/tree/master
+
+which has an MIT license.  It is available in the FreeBSD ports tree
+as devel/py-patch-ng.
+
+Known problems as of 20250226:
+
+ - PRs with multiple attachments only handle the first attachment.
+   (There is missing iteration step.)
+ - PRs with only obsolete patches are not handled gracefully.
+ - Most patches in Base System/conf will not apply (they need a rewrite
+   rules for e.g. "etc/"; cf. "make installworld" for why).
+ - Certain src patches apply incorrectly.  This is due to bugs in the
+   upstream code about fuzzing.
+
+TODO items:
+
+ - There is no cleaned up example script.
+ - Needs parameterization of SKIP_IF_* rather than defines in the code.
+ - The 'verbose' handling is all over the place; needs parameterization.
+ - Base System PRs prepended with e.g. "/home/mylogin/src" are not
+   handled properly (see note).
+ - SKIP_IF is missing the "assigned to mailing list" case.
+ - Missing all documentation.
+ - Need an automated blocklist function vs. large queries (e.g. for bad
+patches).
+
+Note that a number of patches (especially against Base System) contain
+bogus paths.  TBD: is it easier just to ask potential committers to edit
+these patches themselves, rather than continue to tweak the code?  (e.g.
+where is the point of diminishing returns?)
+
+Results:
+
+The results from the 20250218 run testing "all PRs since 2024-01-01 with
+patches, except those marked In Progress" are below.  "got bug_id" is
+output for each bug, and thus is the total count of examined PRs.
+
+  grep "got bug_id:" *20250218 | wc -l
+    766
+  grep "already In Progress, skipping" *20250218 | wc -l
+     91
+  grep "patch applied" *20250218 | wc -l
+    600
+  grep "patch did not apply" *20250218 | wc -l
+     48
+  grep "no valid patches were found" *20250218* | wc -l
+      8
+  grep "unable to determine possible path to the patch, case 2" *20250218 | wc -l
+      9
+  grep "unable to reason about patches" *20250218 | wc -l
+      7
+  grep "there is no repository for Product 'Services'" *2025018 | wc -l
+      1
+
+leaving "2: other".
+
+Analysis: 766/(600-91) implies 90.2% coverage.  However, this statistic
+is known to decrease the older the PRs.  I have not yet quantified it.
+
+This code was developed under the sponsorship of the FreeBSD Foundation
+and carries the BSD 2-clause license.
+
+Please email linimon@FreeBSD.org with bugs (except the ones already listed
+as known above), comments, and so forth.

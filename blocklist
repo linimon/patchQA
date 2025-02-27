@@ -1,0 +1,180 @@
+# 20250225 TODO: automate this.
+
+# a list of PRs to ignore for now, together with reasons they need further work.
+# in reverse order to make editing easier.
+
+# kern
+
+283538	rmacklem patch for Linux; OK to ignore
+283272	premature EOF
+281020	mix of src and ports
+276209	simply did not apply
+275741	premature EOF
+270166	premature EOF
+269133	claims ENOEXIST, but it definitely does
+265714	premature EOF
+264729	premature EOF
+263406	premature EOF
+262179	rebase was insufficient for -CURRENT
+262172	has multiple stale patches
+259294	premature EOF
+255594	premature EOF
+255261	ZFS
+251433	claims ENOEXIST, but it definitely does
+251347	claims ENOEXIST, but it definitely does
+249245	ZFS
+248352	premature EOF
+247327	premature EOF
+246119	claims ENOEXIST, but it definitely does
+244079	mix of src and ports
+241563	premature EOF
+238398	ZFS
+238013	premature EOF
+231240	mix of src and ports
+228068	claims ENOEXIST, but it definitely does
+221067	ZFS
+221064	ZFS
+217607	premature EOF
+213689	does not apply; asked for feedback
+207940	boot1
+204674	boot1
+203166	premature EOF
+201788	boot1
+199654	premature EOF
+196483	does not apply
+195552	file no longer exists
+194766	file no longer exists
+194000	/etc
+193733	premature EOF
+193338	claims ENOEXIST, but it definitely does
+192253	file no longer exists
+185023	tun
+182512	file no longer exists
+180719	premature EOF
+180588	file no longer exists
+180067	claims ENOEXIST, but it definitely does
+179829	premature EOF
+178387	ZFS
+178359	geom
+176603	one quazillion patches
+176053	file no longer exists
+176051	premature EOF
+174032	premature EOF
+173478	premature EOF
+173477	file moved
+172801	file no longer exists
+171410	premature EOF
+171096	file no longer exists
+170949	premature EOF
+169539	geom
+169379	dtrace
+168631	gnu/lib
+167612	file no longer exists
+165970	premature EOF
+165428	geom
+163710	ficl
+162009	too many patches
+159063	files no longer exist
+157200	/etc
+155370	file no longer exists
+155177	premature EOF
+154609	mix of src and ports
+152232	premature EOF
+151305	claims ENOEXIST, but it definitely does
+150334	geom
+150095	premature EOF
+149012	some files no longer exist
+148881	file no longer exists
+148260	pf
+144234	file moved; assigned to jhb
+143703	complicated
+142018	claims ENOEXIST, but it definitely does
+141740	geom
+141090	no valid patches
+139743	too many patches
+139268	file no longer exists
+136618	pf
+130286	premature EOF
+129245	geom
+125139	file no longer exists
+124969	geom
+120091	/etc
+119205	if_dc.c is almost surely OBE
+118093	premature EOF
+115631	premature EOF
+113856	no valid patches
+113849	libdisk
+112658	premature EOF
+102540	file no longer exists
+92786	files no longer exist
+92412	premature EOF
+83358	premature EOF
+66225	premature EOF
+64816	file no longer exists
+
+# misc
+
+283785	no valid patches, even after upload
+280599	mix of src and ports
+251433	no valid patches, even after upload
+261310	premature EOF
+248474	mix of src and ports
+247519	premature EOF
+233699	second of two patches not attempted TODO
+210463	file no longer exists
+208050	FICL
+207553	/etc (moved to conf)
+201419	premature EOF
+198279	no valid patches
+182035	/etc (moved to conf)
+172946	/etc (moved to kern)
+160896	premature EOF
+160530	premature EOF
+100322	claims ENOEXIST, but it definitely does
+
+# wireless
+
+265147	file no longer exists
+219865	/etc
+213214	no valid patches
+166641	no valid patches, even after upload
+163318	premature EOF
+160391	no valid patches
+144109	file no longer exists
+
+# all 2025 (mostly ports)
+
+285040	claims ENOEXIST, but it definitely does, even after rebase
+284995	premature EOF
+284954	files/?  TODO
+284845	premature EOF
+284778	TODO
+284529	mix of src and ports
+284434	TODO
+284353	TODO
+284298	not os.path.isfile( /dev/null ) TODO
+284245	premature EOF
+284114	TODO files/?
+284100	mix of src and ports
+
+# all 2024+ (not yet logged)
+
+# all 2023+ (not yet logged)
+
+# usb
+
+261912	file does not exist TODO
+234469	no valid patches
+142957	no valid patches
+137190	no valid patches
+137189	premature EOF
+137129	no valid patches
+134193	no valid patches
+119227	premature EOF
+118485	inline patch
+117938	TODO
+117911	TODO
+115935	no valid patches
+91538	TODO
+83863	no valid patches
+59698	TODO
