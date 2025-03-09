@@ -3,8 +3,85 @@
 # a list of PRs to ignore for now, together with reasons they need further work.
 # in reverse order to make editing easier.
 
+# bin
+
+280941	premature EOF
+263210	premature EOF
+261855	/etc
+255525	mix of src and ports
+254530	ZFS
+251316	premature EOF
+249461	not actually a full patch TODO
+246670	mix of src and ports
+242983	failed to patch even after update; this should actually work TODO
+241684	files actually do not exist TODO
+238971	premature EOF
+238735	rc TODO
+238129	mix of src and ports
+235589	premature EOF
+234775	premature EOF
+232764	premature EOF
+231591	periodic
+225451	multiple TODO
+225434	src and ports
+224336	etc
+223552	etc
+222999	file actuallly does not exist TODO
+221866	periodic
+220227	file actually does not exist TODO
+218959	file actually does not exist TODO
+218925	periodic
+216472	ambiguous TODO
+215154	no valid patches; context diff
+211909	premature EOF
+210537	looks wrong TODO
+209791	premature EOF even after upload
+206336	etc
+202058	premature EOF
+202055	ENOEXIST even though it does
+197339	etc
+196273	bogus Makefile TODO
+195128	file no longer exists TODO
+189057	premature EOF even after upload
+188726	libexec TODO
+187838	premature EOF
+187526	premature EOF even after upload
+187083	no valid patches even after rebase; TODO
+184282	etc
+181272	no valid patches even after upload TODO
+179085	premature EOF
+176449	ZFS
+175799	premature EOF
+175425	files no longer exist -- nope, a lie TODO
+174816	etc
+173153	etc
+173133	etc
+172534	file no longer exists
+172523	file no longer exists
+169911	file no longer exists
+167744	file no longer exists
+166664	no valid patches; context diff even after rebase TODO
+166181	no valid patches, but it looks like one
+160295	ypserv
+158725	ENOEXIST
+157748	no valid patches, but it looks like one
+155374	file no longer exists TODO
+153252	etc
+151976	premature EOF
+151186	says ENOEXIST after upload even though it does TODO
+147812	file no longer exists TODO
+146543	says not apply even after upload TODO
+146377	says ENOEXIST even after upload
+145694	all ENOEXIST
+141890	ENOEXIST may be obsolete
+138858	ENOEXIST may be obsolete
+# at 131427
+
+
 # kern
 
+284877	new port with no prefix; code should handle this TODO (but uploaded patch)
+283794	top-level Makefile fail TODO (obsoleted the bad patch)
 283538	rmacklem patch for Linux; OK to ignore
 283272	premature EOF
 281020	mix of src and ports
@@ -90,7 +167,7 @@
 143703	complicated
 142018	claims ENOEXIST, but it definitely does
 141740	geom
-141090	no valid patches
+141090	no valid patches, but it looks like one
 139743	too many patches
 139268	file no longer exists
 136618	pf
@@ -102,7 +179,7 @@
 119205	if_dc.c is almost surely OBE
 118093	premature EOF
 115631	premature EOF
-113856	no valid patches
+113856	no valid patches, but it looks like one
 113849	libdisk
 112658	premature EOF
 102540	file no longer exists
@@ -111,6 +188,23 @@
 83358	premature EOF
 66225	premature EOF
 64816	file no longer exists
+
+# man
+
+264739	mix of src and ports
+260724	multiple TODO
+257465	claims ENOEXIST even though it does TODO
+239504	DR in process ziaee
+235946	premature EOF
+280809	no valid patches; not a full patch
+193442	file no longer exists TODO
+179832	premature EOF
+167832	complicated TODO
+167429	GEOM
+157234	file no longer exiasts TODO
+155149	no valid patches, even though it looks like one
+63084	premature EOF
+
 
 # misc
 
@@ -125,7 +219,7 @@
 208050	FICL
 207553	/etc (moved to conf)
 201419	premature EOF
-198279	no valid patches
+198279	no valid patches, even though it looks like one
 182035	/etc (moved to conf)
 172946	/etc (moved to kern)
 160896	premature EOF
@@ -136,44 +230,63 @@
 # at some point back in history, these mean nothing
 
 261912	file does not exist TODO
-234469	no valid patches
-142957	no valid patches
-137190	no valid patches
+234469	no valid patches; context diff
+142957	no valid patches, even though it looks like one
+137190	no valid patches; uuencoded; this is correct; possibly OBE.
 137189	premature EOF
-137129	no valid patches
-134193	no valid patches
+137129	no valid patches; two context diffs; possibly OBE.
+134193	no valid patches; context diff; possibly OBE.
 119227	premature EOF
 118485	inline patch
 117938	TODO
 117911	TODO
-115935	no valid patches
+115935	no valid patches, even though they seem OK; possibly OBE.
 91538	TODO
-83863	no valid patches
+83863	no valid patches; context diff; possibly OBE.
 59698	TODO
 
 # wireless
 
 265147	file no longer exists
 219865	/etc
-213214	no valid patches
-166641	no valid patches, even after upload
+213214	no valid patches; context diff
+166641	no valid patches, even after upload, even though it looks like it
 163318	premature EOF
-160391	no valid patches
+160391	no valid patches; context diff
 144109	file no longer exists
 
 # all 2025 (mostly ports)
 
+285202	ENOEXIST TODO (new 20250306) looks ok
+285195	ENOEXIST TODO (new 20250306)
+285194	ENOEXIST TODO (new 20250306)
+285149	ENOEXIST TODO (new 20250306); gets bogus ports/Makefile; it should know better; TODO
+285122	premature EOF; already Closed/Fixed
+285071	ENOEXIST XXX this fails to patch(1), but nothing reported by python code?
+        missing commit from github?
+285043	no valid patches; ***; context diff
 285040	claims ENOEXIST, but it definitely does, even after rebase
 284995	premature EOF
 284954	files/ ?
+284903	unable to reason; uploaded patch better but now ENOEXIST TODO
 284845	premature EOF
 284778	files/ ?
 284529	mix of src and ports
+284512	unable to reason TODO
 284434	files/ ?
-284298	not os.path.isfile( /dev/null ) TODO
+284319	(see below)
+284298	not os.path.isfile( /dev/null ) (hand-edited, now patches)
 284245	premature EOF
 284114	TODO files/?
 284100	mix of src and ports
+283785	no valid patches (an entire file; patch is obsolete; this is correct)
+197538	premature EOF
+
+# latest TODO 20250307
+284908	bad patch to category/Makefile
+284909	bad patch to category/Makefile
+284319	bad patch to category/Makefile
+
 
 # all 2024
 
@@ -211,7 +324,7 @@
 278648	one Makefile
 278586	files/ ?
 278525	premature EOF
-278518	no valid patches
+278518	no valid patches; this is actually correct.
 278487	premature EOF
 278344	ENOEXIST
 278246	ENOEXIST
@@ -222,7 +335,7 @@
 277552	premature EOF
 277510	ENOEXIST
 277008	premature EOF
-276459	premature EOF
+276459	premature EOF (duplicate)
 276415	ENOEXIST
 
 # all 2023
@@ -234,13 +347,12 @@
 275391	claims ENOEXIST, but it definitely does
 275304	files/ ?
 275167	single Makefile
-275061	ENOEXIST TODO
+275061	files/
 275026	/usr/local instead of in portsdir
 274988	premature EOF
 274978	premature EOF
 274505	"treewide"
 274412	premature EOF
-274134	ENOEXIST
 274099	only first attachment TODO
 273869	premature EOF
 273767	premature EOF
@@ -250,7 +362,6 @@
 273088	periodic/
 272956	confusing
 272511	some kind of commit remnant? TODO
-272484	single Makefile
 272427	premature EOF
 272203	src and ports
 272118	premature EOF
@@ -259,11 +370,9 @@
 271781	one Makefile?
 271668	files/ ?
 271572	ENOEXIST
-271285	ENOEXIST
 271095	files/ ?
 271081	files/ ?
 271013	confusing TODO
-270963	ENOEXIST
 270166	premature EOF
 270090	files/ ?
 269739	premature EOF
@@ -272,7 +381,7 @@
 269637	premature EOF and ENOEXIST
 269473	premature EOF
 269306	premature EOF
-269292	ENOEXIST
+269292	files/
 269242	premature EOF
 269234	ENOEXIST and EOF
 269124	files/ ?
@@ -282,27 +391,212 @@
 
 # all 2022
 
-268686	ENOEXIST
 268508	premature EOF
-268285	ENOEXIST
 268194	premature EOF
 268186	premature EOF
 268018	premature EOF
-267938	ENOEXIST
+267938	files/
 267825	ENOEXIST
-267726	files/ ?
 267606	files/ ?
-267270	ENOEXIST even though it does
+267270	was ENOEXIST even though it does; rebased; now premature EOF
 267249	premature EOF
 267245	premature EOF
-266606	ENOEXIST
-266357	ENOEXIST
-266348	ENOEXIST
+266606	files/
+266357	ENOEXIST; doc and src
 266247	complex TODO
-265714	premature EOF
+265714	premature EOF; duplicate
 265685	premature EOF
 265562	premature EOF
 265559	premature EOF
 265558	premature EOF
 265557	premature EOF
 265317	one Makefile TODO
+
+# all 2021
+
+260831	ENOEXIST
+260724	doc and src
+260700	files/
+259808	etc
+259655	periodic
+259468	premature EOF
+259294	premature EOF; duplicate
+259151	ENOEXIST; confusing TODO
+258872	src and ports
+258781	premature EOF
+258418	ENOEXIST
+258028	premature EOF
+257918	premature EOF
+257814	rename TODO
+257767	premature EOF
+257625	ENOEXIST hrs
+257510	ENOEXIST even though it does
+257465	ENOEXIST even though it does
+257261	ENOEXIST
+257140	premature EOF
+257089	premature EOF
+256896	premature EOF
+256849	ENOEXIST
+256804	premature EOF
+256658	etc
+255594	premature EOF; duplicate
+255525	src and ports, even after rebase
+255261	zfs; duplicate
+255068	ENOEXIST hrs
+255063	premature EOF hrs
+254839	premature EOF
+254786	ENOEXIST but new port
+254530	zfs; duplicate
+254451	premature EOF
+254310	files/
+254252	files/
+254024	files/
+254006	ENOEXIST
+253773	files/
+253060	etc
+252747	files/
+252631	files/
+252424	multiiple
+252348	files/
+
+# all 2020
+
+251609	files/
+251433	ENOEXIST but it does
+251347	ENOEXIST, correctly so
+251316	premature EOF (duplicate)
+251133	premature EOF
+251035	zfs
+250845	files/
+250511	ENOEXIST, correctly so
+250875	no valid patches: patch looks ok TODO
+250489	files/
+250335	complicated
+250033	premature EOF
+249880	premature EOF
+249471	files; may be OBE
+249461	no valid patches: patch is bogus TODO; may be OBE
+249245	zfs; may be OBE
+249180	ENOEXIST and rightfully so
+248979	files/
+248474	ENOEXIST and rightfully so
+248352	premature EOF (duplicate)
+248314	no valid patches; this is correct.
+248200	files/
+248199	files/
+248007	uploaded but still premature EOF
+247762	articles/ ?
+247735	vuxml
+247686	new port; should be ok
+247530	premature EOF and files/
+247519	premature EOF (duplicate)
+247448	files/
+247447	ENOEXIST, correctly so
+247352	new port; should be ok
+247327	premature EOF (duplicate)
+247291	files/
+247179	new port; should be ok
+247124	files/
+246670	ENOEXIST even though it does
+246298	files/
+246119	ENOEXIST even though it does; possibly OBE
+245911	files/
+245590	new port; should be ok
+245316	revive
+245128	ENOEXIST
+244877	files/
+244871	premature EOF
+244326	files/
+244248	files/
+244079	files/
+243859	premature EOF
+243530	no valid patches; not a real patch TODO
+243306	ENOEXIST
+
+# all 2019
+
+242985	new port; should be ok
+242637	files/
+241719	files/
+241684	confusing TODO
+241563	premature EOF (dpulicate)
+240811	ENOEXIST
+240810	ENOEXIST
+240649	premature EOF
+240568	files/
+240397	premature EOF
+240378	ENOEXIST even after upload
+240251	premature EOF
+240037	files/
+239891	files/
+239504	ENOEXIST; ziaee
+239486	files/
+239266	files/
+238971	premature EOF (duplicate)
+238855	ENOEXIST; possibly OBE
+238735	rc
+238398	zfs (duplicate)
+238306	files/
+238129	src and ports
+238013	premature EOF (duplicate)
+237913	files/
+237879	files/
+237213	multiple new ports
+236958	etc
+236956	etc
+236887	premature EOF
+236693	files/
+236662	multiple TODO
+236507	files/ for new port
+236170	ENOEXIST
+236079	ENOEXIST
+235994	files/
+235946	premature EOF (duplicate)
+235589	premature EOF (duplicate)
+235269	files/
+235009	files/
+234775	premature EOF (duplicate)
+
+241782	no valid patches; needs rebase TODO
+240492	no valid patches; this is correct.
+239127	no valid patches; rebase didn't matter TODO
+238232	no valid patches even after rebase TODO
+235915	no valid patches even after rebase TODO
+234622	no valid patches; context diff
+234557	unable to reason
+
+# all 2018
+
+234469	no valid patches; context diff (duplicate)
+233908	new port; should be ok
+233900	no valid patches; all obsolete; this is correct.
+233699	premature EOF
+233567	premature EOF
+233095	files/
+233304	no valid patches; this is a bogus patch; emailed maintainer
+232988	premature EOF; files/
+232764	premature EOF (duplicate)
+232541	files/; hrs
+232392	files/
+231591	conf
+231390	files/; hrs
+231364	files/
+231320	files/; hrs
+231240	files/
+230414	ENOEXIST
+230330	premature EOF
+229558	ENOEXIST even after upload
+228532	premature EOF
+228521	no valid patches; all obsolete; this is correct.
+228520	multiple new ports
+228068	ENOEXIST even though it does
+228011	ENOEXIST even after rebase
+227332	files/; hrs
+227276	files/
+227149	multiple
+226932	multiple
+229630	no valid patches; this is actually the right answer.
+227349	no valid patches, even after rebase TODO
+226931	multiple; huge
+225451	ENOEXIST
+224924	etc
