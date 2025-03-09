@@ -23,7 +23,7 @@
 232764	premature EOF
 231591	periodic
 225451	multiple TODO
-225434	src and ports
+225434	mix of src and ports
 224336	etc
 223552	etc
 222999	file actuallly does not exist TODO
@@ -88,27 +88,27 @@
 276209	simply did not apply
 275741	premature EOF
 270166	premature EOF TODO test case for single patch
-269133	claims ENOEXIST, but it definitely does; failed even with rebase
+269133	ENOEXIST, but it definitely does; failed even with rebase
 265714	premature EOF
 264729	premature EOF
 263406	premature EOF
 262179	rebase was insufficient for -CURRENT
-262172	has multiple stale patches
+262172	multiple stale patches
 259294	premature EOF
 255594	premature EOF
 255261	ZFS
-251433	claims ENOEXIST, but it definitely does
-251347	claims ENOEXIST, but it definitely does
+251433	ENOEXIST, but it definitely does
+251347	ENOEXIST, but it definitely does
 249245	ZFS
 248352	premature EOF
 247327	premature EOF
-246119	claims ENOEXIST, but it definitely does
+246119	ENOEXIST, but it definitely does
 244079	mix of src and ports
 241563	premature EOF
 238398	ZFS
 238013	premature EOF
 231240	mix of src and ports
-228068	claims ENOEXIST, but it definitely does
+228068	ENOEXIST, but it definitely does
 221067	ZFS
 221064	ZFS
 217607	premature EOF
@@ -123,13 +123,13 @@
 194766	file no longer exists
 194000	/etc
 193733	premature EOF
-193338	claims ENOEXIST, but it definitely does
+193338	ENOEXIST, but it definitely does
 192253	file no longer exists
 185023	tun
 182512	file no longer exists
 180719	premature EOF
 180588	file no longer exists
-180067	claims ENOEXIST, but it definitely does
+180067	ENOEXIST, but it definitely does
 179829	premature EOF
 178387	ZFS
 178359	geom
@@ -157,7 +157,7 @@
 155177	premature EOF
 154609	mix of src and ports
 152232	premature EOF
-151305	claims ENOEXIST, but it definitely does
+151305	ENOEXIST, but it definitely does
 150334	geom
 150095	premature EOF
 149012	some files no longer exist
@@ -165,7 +165,7 @@
 148260	pf
 144234	file moved; assigned to jhb
 143703	complicated
-142018	claims ENOEXIST, but it definitely does
+142018	ENOEXIST, but it definitely does
 141740	geom
 141090	no valid patches, but it looks like one
 139743	too many patches
@@ -193,7 +193,7 @@
 
 264739	mix of src and ports
 260724	multiple TODO
-257465	claims ENOEXIST even though it does TODO
+257465	ENOEXIST even though it does TODO
 239504	DR in process ziaee
 235946	premature EOF
 280809	no valid patches; not a full patch
@@ -224,7 +224,7 @@
 172946	/etc (moved to kern)
 160896	premature EOF
 160530	premature EOF
-100322	claims ENOEXIST, but it definitely does
+100322	ENOEXIST, but it definitely does
 
 # usb
 # at some point back in history, these mean nothing
@@ -265,7 +265,7 @@
 285071	ENOEXIST XXX this fails to patch(1), but nothing reported by python code?
         missing commit from github?
 285043	no valid patches; ***; context diff
-285040	claims ENOEXIST, but it definitely does, even after rebase
+285040	ENOEXIST, but it definitely does, even after rebase
 284995	premature EOF
 284954	files/ ?
 284903	unable to reason; uploaded patch better but now ENOEXIST TODO
@@ -311,14 +311,14 @@
 280431	ENOEXIST
 280339	ENOEXIST
 280310	ENOEXIST
-280275	src and ports mixed
+280275	mix of src and ports
 280203	ENOEXIST
 279864	ENOEXIST
 279639	ENOEXIST
 279627	files/ ?
 279247	ENOEXIST
 279034	ENOEXIST
-278790	src and ports
+278790	mix of src and ports
 278781	ENOEXIST
 278730	files/ ?
 278648	one Makefile
@@ -344,7 +344,7 @@
 275626	ENOEXIST
 275566	premature EOF
 275564	ENOEXIST
-275391	claims ENOEXIST, but it definitely does
+275391	ENOEXIST, but it definitely does
 275304	files/ ?
 275167	single Makefile
 275061	files/
@@ -363,9 +363,9 @@
 272956	confusing
 272511	some kind of commit remnant? TODO
 272427	premature EOF
-272203	src and ports
+272203	mix of src and ports
 272118	premature EOF
-272030	src and ports
+272030	mix of src and ports
 271836	ENOEXIST
 271781	one Makefile?
 271668	files/ ?
@@ -415,14 +415,14 @@
 # all 2021
 
 260831	ENOEXIST
-260724	doc and src
+260724	mix of doc and src
 260700	files/
 259808	etc
 259655	periodic
 259468	premature EOF
 259294	premature EOF; duplicate
 259151	ENOEXIST; confusing TODO
-258872	src and ports
+258872	mix of src and ports
 258781	premature EOF
 258418	ENOEXIST
 258028	premature EOF
@@ -440,7 +440,7 @@
 256804	premature EOF
 256658	etc
 255594	premature EOF; duplicate
-255525	src and ports, even after rebase
+255525	mix of src and ports, even after rebase
 255261	zfs; duplicate
 255068	ENOEXIST hrs
 255063	premature EOF hrs
@@ -537,7 +537,7 @@
 238735	rc
 238398	zfs (duplicate)
 238306	files/
-238129	src and ports
+238129	mix of src and ports
 238013	premature EOF (duplicate)
 237913	files/
 237879	files/
