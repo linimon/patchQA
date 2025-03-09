@@ -10,11 +10,10 @@ This code relies on upstream code from the following git repository:
 which has an MIT license.  It is available in the FreeBSD ports tree
 as devel/py-patch-ng.
 
-Known problems as of 20250226:
+Known problems as of 20250309:
 
  - PRs with multiple attachments only handle the first attachment.
    (There is missing iteration step.)
- - PRs with only obsolete patches are not handled gracefully.
  - Most patches in Base System/conf will not apply (they need a rewrite
    rules for e.g. "etc/"; cf. "make installworld" for why).
  - Certain src patches apply incorrectly.  This is due to bugs in the
@@ -64,6 +63,7 @@ leaving "2: other".
 
 Analysis: 766/(600-91) implies 90.2% coverage.  However, this statistic
 is known to decrease the older the PRs.  I have not yet quantified it.
+(Later note: this statistic is overly generous.)
 
 This code was developed under the sponsorship of the FreeBSD Foundation
 and carries the BSD 2-clause license.
