@@ -46,9 +46,11 @@
 188726	libexec TODO
 187838	premature EOF
 187526	premature EOF even after upload
-187083	no valid patches even after rebase; TODO
+187083	no valid patches even after rebase:
+#	2025-03-09 11:49:56,490 - patch_ng - WARNING - invalid hunk no.1 at 6 for target file b'usr.bin/sort/sort.c'
 184282	etc
-181272	no valid patches even after upload TODO
+181272	no valid patches even after upload:
+#	2025-03-09 11:51:07,112 - patch_ng - WARNING - error: patch stream is incomplete!
 179085	premature EOF
 176449	ZFS
 175799	premature EOF
@@ -60,11 +62,12 @@
 172523	file no longer exists
 169911	file no longer exists
 167744	file no longer exists
-166664	no valid patches; context diff even after rebase TODO
-166181	no valid patches, but it looks like one
+166664	no valid patches; context diff; rebase was ineffective
+166181	no valid patches: even after rebase:
+#	2025-03-09 11:51:48,398 - patch_ng - WARNING - error: patch stream is incomplete!
 160295	ypserv
 158725	ENOEXIST
-157748	no valid patches, but it looks like one
+157748	no valid patches; context diff
 155374	file no longer exists TODO
 153252	etc
 151976	premature EOF
@@ -167,7 +170,7 @@
 143703	complicated
 142018	ENOEXIST, but it definitely does
 141740	geom
-141090	no valid patches, but it looks like one
+141090	no valid patches; context diff
 139743	too many patches
 139268	file no longer exists
 136618	pf
@@ -179,7 +182,7 @@
 119205	if_dc.c is almost surely OBE
 118093	premature EOF
 115631	premature EOF
-113856	no valid patches, but it looks like one
+113856	no valid patches; context diff
 113849	libdisk
 112658	premature EOF
 102540	file no longer exists
@@ -202,15 +205,17 @@
 167832	complicated TODO
 167429	GEOM
 157234	file no longer exiasts TODO
-155149	no valid patches, even though it looks like one
+155149	no valid patches:
+#	2025-03-09 11:58:30,973 - patch_ng - WARNING - error: patch stream is incomplete!
 63084	premature EOF
 
 
 # misc
 
-283785	no valid patches, even after upload
+283785	no valid patches; it's an entire file, so this is correct.
 280599	mix of src and ports
-251433	no valid patches, even after upload
+251433	no valid patches, even after upload:
+#	2025-03-09 12:01:36,191 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
 261310	premature EOF
 248474	mix of src and ports
 247519	premature EOF
@@ -219,7 +224,7 @@
 208050	FICL
 207553	/etc (moved to conf)
 201419	premature EOF
-198279	no valid patches, even though it looks like one
+198279	no valid patches; context diff
 182035	/etc (moved to conf)
 172946	/etc (moved to kern)
 160896	premature EOF
@@ -231,7 +236,7 @@
 
 261912	file does not exist TODO
 234469	no valid patches; context diff
-142957	no valid patches, even though it looks like one
+142957	no valid patches, context diff
 137190	no valid patches; uuencoded; this is correct; possibly OBE.
 137189	premature EOF
 137129	no valid patches; two context diffs; possibly OBE.
@@ -240,7 +245,7 @@
 118485	inline patch
 117938	TODO
 117911	TODO
-115935	no valid patches, even though they seem OK; possibly OBE.
+115935	no valid patches; context diff; possibly OBE.
 91538	TODO
 83863	no valid patches; context diff; possibly OBE.
 59698	TODO
@@ -250,37 +255,42 @@
 265147	file no longer exists
 219865	/etc
 213214	no valid patches; context diff
-166641	no valid patches, even after upload, even though it looks like it
+166641	no valid patches, even after upload:
+#	2025-03-09 12:05:58,460 - patch_ng - WARNING - error: patch stream is incomplete!
 163318	premature EOF
 160391	no valid patches; context diff
 144109	file no longer exists
 
 # all 2025 (mostly ports)
 
-285202	ENOEXIST TODO (new 20250306) looks ok
-285195	ENOEXIST TODO (new 20250306)
-285194	ENOEXIST TODO (new 20250306)
+285202	ENOEXIST
+#	2025-03-09 12:19:58,265 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
+285195	ENOEXIST
+#	2025-03-09 12:23:19,560 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
+285194	needs makepatch
 285149	ENOEXIST TODO (new 20250306); gets bogus ports/Makefile; it should know better; TODO
 285122	premature EOF; already Closed/Fixed
 285071	ENOEXIST XXX this fails to patch(1), but nothing reported by python code?
         missing commit from github?
-285043	no valid patches; ***; context diff
-285040	ENOEXIST, but it definitely does, even after rebase
-284995	premature EOF
-284954	files/ ?
-284903	unable to reason; uploaded patch better but now ENOEXIST TODO
-284845	premature EOF
-284778	files/ ?
+285043	no valid patches; context diff
+285040	ENOEXIST
+#	2025-03-09 15:59:13,618 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
+284954	now fixed:
+#	deskutils/gnome-initial-setup.orig/files/patch-gnome-initial-setup_gis-driver.c     1969-12-31 19:00:00.000000000 -0500
+#	^Triage: rebase patch, take 2: force timestamp(-1) to filename /dev/null.
+284903	unable to reason; uploaded patch better but now ENOEXIST; now fixed:
+#	+++ net-p2p/transmission-components/files/patch-libtransmission_port-forwarding-upnp.cc 1970-01-01 03:00:00.000000000 +0300
+284778	needs makepatch
 284529	mix of src and ports
-284512	unable to reason TODO
-284434	files/ ?
+284512	unable to reason; now OBE
+284434	needs makepatch
 284319	(see below)
 284298	not os.path.isfile( /dev/null ) (hand-edited, now patches)
-284245	premature EOF
-284114	TODO files/?
+284114	needs makepatch
 284100	mix of src and ports
 283785	no valid patches (an entire file; patch is obsolete; this is correct)
 197538	premature EOF
+#	2025-03-09 12:14:46,845 - patch_ng - ERROR - premature end of source file b'databases/tuning-primer/pkg-descr' at hunk 1
 
 # latest TODO 20250307
 284908	bad patch to category/Makefile
@@ -290,20 +300,17 @@
 
 # all 2024
 
-283724	premature EOF
 283717	premature EOF
-283671	premature EOF
+#	2025-03-09 12:16:09,963 - patch_ng - WARNING -  hunk no.2 doesn't match source file at line 17
 283234	ENOEXIST
 282797	ENOEXIST
 282403	ENOEXIST
 282259	ENOEXIST
-282245	premature EOF
-282175	premature EOF
 282139	ENOEXIST
 282062	premature EOF
 281892	premature EOF
 281657	ENOEXIST
-281207	files/ ?
+281207	needs makepatch
 281152	ENOEXIST
 281118	ENOEXIST
 280610	premature EOF
@@ -315,22 +322,22 @@
 280203	ENOEXIST
 279864	ENOEXIST
 279639	ENOEXIST
-279627	files/ ?
+279627	ENOEXIST
+#	2025-03-09 16:38:56,529 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
 279247	ENOEXIST
 279034	ENOEXIST
 278790	mix of src and ports
 278781	ENOEXIST
-278730	files/ ?
+278730	needs makepatch
 278648	one Makefile
-278586	files/ ?
+278586	needs makepatch
 278525	premature EOF
 278518	no valid patches; this is actually correct.
 278487	premature EOF
 278344	ENOEXIST
 278246	ENOEXIST
-278050	files/ ?
-277911	files/
-277821	ENOEXIST, confirmed
+278050	needs makepatch
+277911	needs makepatch
 277643	premature EOF
 277552	premature EOF
 277510	ENOEXIST
@@ -345,9 +352,9 @@
 275566	premature EOF
 275564	ENOEXIST
 275391	ENOEXIST, but it definitely does
-275304	files/ ?
+275304	needs makepatch
 275167	single Makefile
-275061	files/
+275061	needs makepatch
 275026	/usr/local instead of in portsdir
 274988	premature EOF
 274978	premature EOF
@@ -356,8 +363,8 @@
 274099	only first attachment TODO
 273869	premature EOF
 273767	premature EOF
-273688	files/ ?
-273569	files/ ?
+273688	needs makepatch
+273569	needs makepatch name of patch; emailed maintainer 20250309
 273460	ENOEXIST
 273088	periodic/
 272956	confusing
@@ -368,26 +375,26 @@
 272030	mix of src and ports
 271836	ENOEXIST
 271781	one Makefile?
-271668	files/ ?
+271668	needs makepatch
 271572	ENOEXIST
-271095	files/ ?
-271081	files/ ?
+271095	needs makepatch
+271081	needs makepatch
 271013	confusing TODO
 270166	premature EOF
-270090	files/ ?
+270090	needs makepatch
 269739	premature EOF
 269735	premature EOF
 269719	premature EOF
 269637	premature EOF and ENOEXIST
 269473	premature EOF
 269306	premature EOF
-269292	files/
+269292	needs makepatch
 269242	premature EOF
 269234	ENOEXIST and EOF
-269124	files/ ?
+269124	needs makepatch
 269025	premature EOF
-268961	files/ ?
-268750	files/ ?
+268961	needs makepatch
+268750	ENOEXIST; sent email to committer et alia 20250309
 
 # all 2022
 
@@ -395,14 +402,14 @@
 268194	premature EOF
 268186	premature EOF
 268018	premature EOF
-267938	files/
+267938	needs makepatch, but two patches: emailed submitter #2 20250309; hrs
 267825	ENOEXIST
-267606	files/ ?
+267606	needs makepatch
 267270	was ENOEXIST even though it does; rebased; now premature EOF
 267249	premature EOF
 267245	premature EOF
-266606	files/
-266357	ENOEXIST; doc and src
+266606	needs makepatch
+266357	ENOEXIST; mix of doc and src
 266247	complex TODO
 265714	premature EOF; duplicate
 265685	premature EOF
@@ -416,7 +423,7 @@
 
 260831	ENOEXIST
 260724	mix of doc and src
-260700	files/
+260700	needs makepatch
 259808	etc
 259655	periodic
 259468	premature EOF
@@ -448,141 +455,144 @@
 254786	ENOEXIST but new port
 254530	zfs; duplicate
 254451	premature EOF
-254310	files/
-254252	files/
-254024	files/
+254252	needs makepatch
+254024	needs makepatch; multiple patches
 254006	ENOEXIST
-253773	files/
 253060	etc
-252747	files/
-252631	files/
+252747	after rebase, ENOEXIST:
+#	2025-03-09 21:55:48,272 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
+252631	needs makepatch
 252424	multiiple
-252348	files/
+252348	needs makepatch
 
 # all 2020
 
-251609	files/
 251433	ENOEXIST but it does
 251347	ENOEXIST, correctly so
 251316	premature EOF (duplicate)
 251133	premature EOF
 251035	zfs
-250845	files/
+250845	needs makepatch
 250511	ENOEXIST, correctly so
-250875	no valid patches: patch looks ok TODO
-250489	files/
+250489	needs makepatch
 250335	complicated
 250033	premature EOF
 249880	premature EOF
-249471	files; may be OBE
+249471	needs makepatch; may be OBE
 249461	no valid patches: patch is bogus TODO; may be OBE
 249245	zfs; may be OBE
 249180	ENOEXIST and rightfully so
-248979	files/
+248979	needs makepatch
 248474	ENOEXIST and rightfully so
 248352	premature EOF (duplicate)
 248314	no valid patches; this is correct.
-248200	files/
-248199	files/
+248200	needs makepatch
+248199	needs makepatch
 248007	uploaded but still premature EOF
 247762	articles/ ?
 247735	vuxml
 247686	new port; should be ok
 247530	premature EOF and files/
+#	2025-03-09 22:07:09,402 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
 247519	premature EOF (duplicate)
-247448	files/
 247447	ENOEXIST, correctly so
 247352	new port; should be ok
 247327	premature EOF (duplicate)
-247291	files/
+247291	needs makepatch
 247179	new port; should be ok
-247124	files/
+247124	needs makepatch
 246670	ENOEXIST even though it does
-246298	files/
+246298	premature EOF
 246119	ENOEXIST even though it does; possibly OBE
-245911	files/
+245911	needs makepatch
 245590	new port; should be ok
 245316	revive
 245128	ENOEXIST
-244877	files/
+244877	ENOEXIST even after rebase:
+#	2025-03-09 22:29:07,924 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
 244871	premature EOF
-244326	files/
-244248	files/
-244079	files/
+244248	needs makepatch
+244079	ENOEXIST:
+#	2025-03-09 22:34:39,649 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
 243859	premature EOF
-243530	no valid patches; not a real patch TODO
+243530	no valid patches; not a real patch:
+#	2025-03-09 12:06:47,419 - patch_ng - WARNING - error: no patch data found!
 243306	ENOEXIST
 
 # all 2019
 
 242985	new port; should be ok
-242637	files/
-241719	files/
+242637	ENOEXIST:
+#	2025-03-09 22:38:32,369 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
+241719	ENOEXIST even after rebase
 241684	confusing TODO
 241563	premature EOF (dpulicate)
 240811	ENOEXIST
 240810	ENOEXIST
 240649	premature EOF
-240568	files/
 240397	premature EOF
 240378	ENOEXIST even after upload
 240251	premature EOF
-240037	files/
-239891	files/
+240037	ENOEXIST even after upload:
+#	2025-03-09 22:50:39,190 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
+239891	files/; multiple
 239504	ENOEXIST; ziaee
-239486	files/
-239266	files/
+239266	ENOEXIST even after rebase:
+#	2025-03-09 23:28:11,495 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
 238971	premature EOF (duplicate)
 238855	ENOEXIST; possibly OBE
 238735	rc
 238398	zfs (duplicate)
-238306	files/
+238306	needs makepatch
 238129	mix of src and ports
 238013	premature EOF (duplicate)
-237913	files/
-237879	files/
+237913	after rebase, "patch does not apply", but I can't tell where TODO
 237213	multiple new ports
 236958	etc
 236956	etc
 236887	premature EOF
-236693	files/
+236693	files/; multiple TODO
 236662	multiple TODO
-236507	files/ for new port
+236507	ENOEXIST for new port:
+#	2025-03-09 23:54:07,424 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
 236170	ENOEXIST
 236079	ENOEXIST
-235994	files/
 235946	premature EOF (duplicate)
 235589	premature EOF (duplicate)
-235269	files/
-235009	files/
+235269	ENOEXIST:
+#	2025-03-10 00:04:50,373 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
+235009	files/; multiple TODO
 234775	premature EOF (duplicate)
 
-241782	no valid patches; needs rebase TODO
+241782	no valid patches; rebase didn't matter; sent email 20250309
 240492	no valid patches; this is correct.
-239127	no valid patches; rebase didn't matter TODO
-238232	no valid patches even after rebase TODO
-235915	no valid patches even after rebase TODO
+239127	no valid patches; rebase didn't matter, twice
+#	2025-03-09 11:28:03,064 - patch_ng - WARNING - error: patch stream is incomplete!
+#	2025-03-09 11:28:03,064 - patch_ng - DEBUG - total files: 1  total hunks: 0
+238232	no valid patches even after rebase:
+#	2025-03-09 11:46:14,883 - patch_ng - WARNING - error: patch stream is incomplete!
+235915	no valid patches even after rebase:
+#	2025-03-09 11:47:39,738 - patch_ng - WARNING - invalid hunk no.1 at 36 for target file b'dns/nsnotifyd/files/nsnotifyd.in        2019-02-20 14:52:27.537505000 +0000'
 234622	no valid patches; context diff
 234557	unable to reason
 
 # all 2018
 
 234469	no valid patches; context diff (duplicate)
-233908	new port; should be ok
 233900	no valid patches; all obsolete; this is correct.
 233699	premature EOF
 233567	premature EOF
-233095	files/
-233304	no valid patches; this is a bogus patch; emailed maintainer
+233095	needs makepatch
+233304	no valid patches; this is a bogus patch; emailed maintainer 20250309
 232988	premature EOF; files/
+#	2025-03-10 00:12:01,192 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
 232764	premature EOF (duplicate)
-232541	files/; hrs
-232392	files/
+232541	after rebase, premature EOF; hrs
+232392	files/; controversy
 231591	conf
-231390	files/; hrs
-231364	files/
-231320	files/; hrs
-231240	files/
+231390	files/; multiple patches; hrs
+231364	needs makepatch
+231320	needs makepatch; hrs
 230414	ENOEXIST
 230330	premature EOF
 229558	ENOEXIST even after upload
@@ -591,12 +601,13 @@
 228520	multiple new ports
 228068	ENOEXIST even though it does
 228011	ENOEXIST even after rebase
-227332	files/; hrs
-227276	files/
+227332	needs makepatch; hrs
+227276	needs makepatch
 227149	multiple
 226932	multiple
-229630	no valid patches; this is actually the right answer.
-227349	no valid patches, even after rebase TODO
+229630	no valid patches; all obsolete; this is correct.
+227349	no valid patches, even after rebase:
+#	2025-03-09 11:49:07,354 - patch_ng - WARNING - skipping invalid patch with no hunks for file b'graphics/lensfun/files/patch-CMakeLists.txt'
 226931	multiple; huge
 225451	ENOEXIST
 224924	etc
