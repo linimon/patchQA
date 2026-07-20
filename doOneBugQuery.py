@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #
-# Copyright (c) 2025 The FreeBSD Foundation
+# Copyright (c) 2025-2026 The FreeBSD Foundation
 #
 # This software was developed by Mark Linimon <linimon@FreeBSD.org>
 # under sponsorship from the FreeBSD Foundation.
@@ -30,7 +30,7 @@ def doOneBugQuery( bugQuery, verbose ):
         if ( verbose ):
             print( 'about to go fetch metadata for bugQuery ' + bugQuery + ' from Bugzilla\n' )
 
-        # only pass True as verbose here if you want to get a dump of all progress
+        # only pass True as gmfbVerbose here if you want to get a dump of all progress
         bugsDict = getMetadataFromBugzilla.getMetadataFromBugzilla( bugQuery, gmfbVerbose )
 
         if bugsDict == None:
