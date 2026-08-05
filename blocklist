@@ -391,37 +391,32 @@
 144109	context diff; file no longer exists; confirmed 20260611
 
 # all 2026
-# now through 297224 20260801
+# now through 297287 20260805
 
-297187	no valid patches were found; still fucking context diff TODO 20260801
-297184	was context diff; not fixed, "patch did not apply" TODO 20260801
+297187	no valid patches were found; should be fixed 20260805; is not TODO
 297072	needs makepatch
 297068	ENOEXIST
-297019	was context diff; should be fixed; was not TODO XXX MCL 20260801
-296953	did not apply TODO
-296877	premature EOF; looks ok TODO
-296827	no valid patches; x-troff-man TODO 20260801
 #296804	no valid patches; patches marked obsolete so this is correct
-296652	was context diff; should be fixed; nope TODO 20260801
-296591	premature EOF TODO
+296602	unable to reason TODO 20260805
+296601	unable to reason TODO 20260805
 296544	ENOEXIST; two patches that need s@etc@libexec/rc@
 296473	needs makepatch
+296417	needs makepatch
 296263	needs makepatch
 296064	all three have to be applied in sequence; TODO confirm that they really are 20260801
 295864	needs makepatch; adamw@
 295845	needs makepatch
 295640	premature EOF; two patches; confusing; TODO
 295222	needs makepatch
-295081	premature EOF; XXX this patches fine manually 20260704
+295081	bsdrcmds not fixed 20260805 TODO
 294847	needs makepatch
-294591	premature EOF TODO
 294452	needs makepatch
-294243	no valid patches; failed manually too; sent email 20260427; no response as of 20260708
+294243	no valid patches; failed manually too; sent email 20260427; no response as of 20260805
 294086	needs makepatch; danfe@
 293391	needs makepatch
 293319	mix of ports and src
 293225	needs makepatch
-293188	now applies but has stray patch; notified submitter 20260502; no response as of 20260708
+293188	now applies but has stray patch; notified submitter 20260502; no response as of 20260805
 #293157	no valid patches; this is correct, the attachment was marked obsolete
 292966	needs makepatch; in addition, one entire file; dafuq?; sent email 20260625; replied but confusing
 292618	needs makepatch
