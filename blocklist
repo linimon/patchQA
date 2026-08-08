@@ -19,15 +19,13 @@
 234775	premature EOF; now has inline patch TODO
 225451	multiple TODO
 #220246	just needs MFC
-#218959	rebased; should be fixed 20260628
 #218925	see conf
-#211909	premature EOF; should now be fixed 20260628
-#210537	looks wrong TODO; sent by mi@; closed as OBE 20260628
+#211909	premature EOF; should be fixed 20260628
+210537	looks wrong TODO; sent by mi@; complaint as of 20260630
 #209791	premature EOF; should be fixed 20260628
-#206336	should now be fixed 202060628
+#206336	should be fixed 202060628
 202058	premature EOF; two patches TODO
 202055	ENOEXIST; so far off it's unusable; sent email 20260628
-#196273	bogus Makefile; later, premature EOF even after rebase; marked OBE 20260628
 195128	des@, says keep open 20260612
 189057	premature EOF even after rebase
 188726	libexec; needs rebase
@@ -78,7 +76,7 @@
 78562	did not match, even after rebase
 78170	no valid patches, even after rebase
 76736	rebased, but context diff
-74178	grdc; probably OBE
+74178	grdc; 1.0-CURRENT; probably OBE
 73422	ypbind; context diff
 69875	context diff
 69010	google; ENOEXIST even after rebase
@@ -144,8 +142,8 @@
 #184282	freebsd-update; should be fixed 20260630
 #182035	rc.d; way off; sent email 20260619; now has des@ commit, so ok
 #180572	network.subr; should be fixed
-#178504	no valid patches; sent mail "is this OBE" 20260619; got confusing reply TODO
-#178215	rc.d; ENOEXIST; possibly OBE; sent email 20260619; no response 20260630
+178504	no valid patches; sent mail "is this OBE" 20260619; got confusing reply TODO
+178215	rc.d; ENOEXIST; possibly OBE; sent email 20260619; no response 20260630
 #177217	rc.d; should be fixed
 #176347	rc.d; should be fixed
 #175394	termcap; should be fixed 20260630
@@ -155,8 +153,6 @@
 174054	periodic; multiple
 #173471	rc.d; should be fixed 20260630
 #173153	./libexec/rc/rc.d/netwait; should be fixed 20260630
-#173133	rc.d; declared OBE 20260630
-#172532	rc.d; declared OBE 20260630
 #169373	rc.d; no response to email from 2024; declared feedback timeout 20260630
 #169047	rc.subr; should be fixed 202060630
 167822	rc.d; multiple TODO
@@ -171,21 +167,21 @@
 153666	rc.d; mountzfsbeforelocal; wait, isn't this the same as one of the others??? TODO
 153252	ipfw
 148137	rc.d
-#148017	network.subr; should now be fixed 20260702
+#148017	network.subr; should be fixed 20260702
 147685	rc.d
-#147681	network.subr; probably OBE; sent email 20260702
+#147681	network.subr; probably OBE; sent email 20260702; no response as of 20260807
 145440	rc.d
 145009	rc.subr
 144548	boot
 143637	rc.d
 143085	rc.d
 142304	rc.d
-#140440	rc.suspend; should now be fixed 20260702
+#140440	rc.suspend; should be fixed 20260702
 137671	beastie.4th; OBE?
 133890	one of 3 patches is rc.d
 132476	rc.d
-#129697	periodic; should now be fixed 20260702
-#128433	rc.subr; should now be fixed 20260702
+#129697	periodic; should be fixed 20260702
+#128433	rc.subr; should be fixed 20260702
 126392	network.subr
 124248	rc.d
 123551	periodic
@@ -240,17 +236,15 @@
 259294	premature EOF
 255594	premature EOF
 255261	ZFS
-251433	no valid patches, even after upload:
-#	2025-03-09 12:01:36,191 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
+251433	no valid patches, even after upload; sent email 20260525, no response as of 20260807
 251347	ENOEXIST, but it definitely does
 251035	zfs
 249245	ZFS
-248474	ENOEXIST and rightfully so; linimon rework ineffective TODO
+248474	context diff; ENOEXIST; linimon rework ineffective TODO
 248352	premature EOF, even with rework; should be fixed 20260521; nope TODO
 247327	premature EOF
 246119	ENOEXIST, but it definitely does
-244079	mix of src and ports; ENOEXIST:
-#	2025-03-09 22:34:39,649 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
+244079	mix of src and ports; ENOEXIST; asked for feedback 20260525, no response as of 20260807
 241563	premature EOF
 238398	ZFS
 238013	premature EOF
@@ -392,13 +386,9 @@
 
 # all 2026
 # now through 297287 20260805
-
-297187	no valid patches were found; should be fixed 20260805; is not TODO
 297072	needs makepatch
 297068	ENOEXIST
 #296804	no valid patches; patches marked obsolete so this is correct
-296602	unable to reason TODO 20260805
-296601	unable to reason TODO 20260805
 296544	ENOEXIST; two patches that need s@etc@libexec/rc@
 296473	needs makepatch
 296417	needs makepatch
@@ -408,7 +398,6 @@
 295845	needs makepatch
 295640	premature EOF; two patches; confusing; TODO
 295222	needs makepatch
-295081	bsdrcmds not fixed 20260805 TODO
 294847	needs makepatch
 294452	needs makepatch
 294243	no valid patches; failed manually too; sent email 20260427; no response as of 20260805
@@ -435,7 +424,7 @@
 288467	3 different patches; config.in is wrong TODO
 288059	multiple; yuri@ TODO
 288014	needs makepatch
-287834	multiple; now premature EOF TODO
+287834	multiple; now premature EOF; good test case for it 20260807 TODO
 #287662	doc; needs rebase; failed; sent email 20260131; redone 20260502; skipped due to "in progress"
 287437	needs makepatch
 287261	needs makepatch
@@ -451,16 +440,13 @@
 # all 2024
 
 #283538	see kern
-#283272	premature EOF; treewide; marked as OBE 20260707
 #283227	tree-wide; does not match; now "In Progress"; sent email asking OBE? 20260707
 #283083	ENOEXIST; sent email to submitter 20251123; says "patch is only for 14"
-#282972	premature EOF; mixes formatting and content changes; sent email 20260519; controversy; just marked OBE 20260707
 282797	needs makepatch
 282403	needs makepatch
 281207	needs makepatch
-280599	mix of src and ports; "aq.h"; actually just ports; emailed commenter 20250318; got response TODO
+280599	mix of src and ports; "aq.h"; actually just ports; commenter responded; just needs makepatch
 #280339	see doc
-280136	unable to reason; updated patch via MOVED; sent email to submitter 20251123; replied; still broken 20260608
 279864	needs makepatch
 278790	mix of src and ports
 278781	needs makepatch; two patches
@@ -510,7 +496,7 @@
 262613	premature EOF; first part of patch does not apply; sent email 20260520 but I don't see it TODO
 #262172	see kern
 #261912	see usb
-261523	multiple; portmgr@; maybe OBE?
+261523	multiple; portmgr@; no response since 2023-01-04; maybe OBE?
 #261310	see kern
 
 # all 2021
@@ -563,14 +549,12 @@
 #241684	see bin
 #241563	see kern
 239891	needs makepatch; multiple
-239266	ENOEXIST even after rebase; response from Mark Millard TODO
-#	2025-03-09 23:28:11,495 - patch_ng - DEBUG - broken patch from Google Code, stripping prefixes..
+239266	ENOEXIST even after rebase; confusing response from Mark Millard TODO
 238855	needs rebase; this is just wrong TODO
 #238735	see conf
 #238398	see kern
 #238129	see bin
 237213	multiple new ports
-#236887	premature EOF; mandree@; marked OBE 20260609
 240492	no valid patches; x11@; this is correct.
 #238232	see bin
 #234622	see kern
@@ -594,7 +578,6 @@
 #228068	see kern
 227276	needs makepatch
 #221203	see conf
-#220866	ENOEXIST even after fix, not git diff; way off; closed as OBE 20260617
 #220246	see bin
 #218447	see conf
 #217607	see kern
