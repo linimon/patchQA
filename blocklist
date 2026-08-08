@@ -5,14 +5,13 @@
 
 # bin
 
-284100	sent email 20250215; no replay as of 20260628 TODO
 #283964	not really "In Progress" TODO
 265685	premature EOF; abandoned exp-run TODO
 254530	ZFS from 2021
 251316	premature EOF
 #250511	"sample inputs"; committed; needs MFC 20260611
 246670	ENOEXIST even though it does; mix of src and ports; still 20260608; portmgr@
-#242983	ENOEXIST even after update; rebased but two patches conflict; sent email 20260614
+#242983	ENOEXIST even after update; rebased but two patches conflict; sent email 20260614; got response "still looking at it"
 241684	only does one patch of two: usr.sbin/autofs/autofs/special_media TODO
 238129	mix of src and ports; controversy TODO
 235589	premature EOF even after rebase; context diff; TODO 20260611
@@ -20,12 +19,9 @@
 225451	multiple TODO
 #220246	just needs MFC
 #218925	see conf
-#211909	premature EOF; should be fixed 20260628
 210537	looks wrong TODO; sent by mi@; complaint as of 20260630
-#209791	premature EOF; should be fixed 20260628
-#206336	should be fixed 202060628
 202058	premature EOF; two patches TODO
-202055	ENOEXIST; so far off it's unusable; sent email 20260628
+#202055	ENOEXIST; so far off it's unusable; sent email 20260628; needs to be upstreamed
 195128	des@, says keep open 20260612
 189057	premature EOF even after rebase
 188726	libexec; needs rebase
@@ -40,7 +36,7 @@
 172523	did not match, even after rebase
 167744	needs rebase; context diff
 166664	no valid patches even after rebase; context diff; TODO
-166181	no valid patches: even after rebase; sent email 20260526
+166181	no valid patches: even after rebase; sent email 20260526; no response as of 20260807
 #	2025-03-09 11:51:48,398 - patch_ng - WARNING - error: patch stream is incomplete!
 # past here are probably all context diffs 20260611
 163515	no valid patches: context diff
@@ -113,7 +109,7 @@
 #259655	security.functions; marked patch as obsolete -- see pull request
 256658	rc.d; controversy
 253060	sendmail; controversy
-247447	termcap; ENOEXIST, correctly so; sent email 20260525; no response as of 20260628
+247447	termcap; ENOEXIST, correctly so; sent email 20260525; no response as of 20260807
 238735	rc.d; binmisc TODO
 236958	rc.d; have to ask about 'resume' TODO
 #236956	rc.d; should be fixed 20260617
@@ -140,10 +136,9 @@
 #189854	periodic; should be fixed
 #184355	rc.d; should be fixed
 #184282	freebsd-update; should be fixed 20260630
-#182035	rc.d; way off; sent email 20260619; now has des@ commit, so ok
 #180572	network.subr; should be fixed
 178504	no valid patches; sent mail "is this OBE" 20260619; got confusing reply TODO
-178215	rc.d; ENOEXIST; possibly OBE; sent email 20260619; no response 20260630
+178215	rc.d; ENOEXIST; possibly OBE; sent email 20260619; no response 20260807
 #177217	rc.d; should be fixed
 #176347	rc.d; should be fixed
 #175394	termcap; should be fixed 20260630
@@ -248,7 +243,6 @@
 241563	premature EOF
 238398	ZFS
 238013	premature EOF
-234622	no valid patches; context diff
 233699	was: second of two patches not attempted; now: both move tom tried but too much drift
 231591	TODO
 231240	mix of src and ports, even after rebase
@@ -400,12 +394,12 @@
 295222	needs makepatch
 294847	needs makepatch
 294452	needs makepatch
-294243	no valid patches; failed manually too; sent email 20260427; no response as of 20260805
+294243	no valid patches; failed manually too; sent email 20260427; no response as of 20260807
 294086	needs makepatch; danfe@
 293391	needs makepatch
 293319	mix of ports and src
 293225	needs makepatch
-293188	now applies but has stray patch; notified submitter 20260502; no response as of 20260805
+293188	now applies but has stray patch; notified submitter 20260502; no response as of 20260807
 #293157	no valid patches; this is correct, the attachment was marked obsolete
 292966	needs makepatch; in addition, one entire file; dafuq?; sent email 20260625; replied but confusing
 292618	needs makepatch
@@ -414,7 +408,6 @@
 
 291828	patch to src, not ports TODO
 #291500	fixed patch but problem not solved; SEP
-#291004	was a complete mess; completely redid 20260707; ok
 #290653	no valid patches; this is correct
 290315	multiple; now No Valid Patches; needs makepatch
 #290173	see conf
@@ -440,7 +433,7 @@
 # all 2024
 
 #283538	see kern
-#283227	tree-wide; does not match; now "In Progress"; sent email asking OBE? 20260707
+#283227	tree-wide; does not match; now "In Progress"; sent email asking OBE? 20260707; replied "keep it open"
 #283083	ENOEXIST; sent email to submitter 20251123; says "patch is only for 14"
 282797	needs makepatch
 282403	needs makepatch
@@ -463,11 +456,11 @@
 # all 2023
 
 #275741	see kern
-275564	ENOEXIST; sent email 20260525; no response as of 20260617
+275564	ENOEXIST; sent email 20260525; no response as of 20260807
 275304	needs makepatch
 275061	needs makepatch
 #274988	see bin
-274978	premature EOF; sent email 20260519; no response as of 20260617
+274978	premature EOF; sent email 20260519; no response as of 20260807
 #273088	see conf
 272427	premature EOF; port rename
 272203	mix of src and ports
@@ -504,11 +497,11 @@
 260700	needs makepatch
 #259655	see conf
 259151	needs makepatch
-258781	premature EOF; tried to fix, but gave up and sent email 20260520; no response as of 20260614
+258781	premature EOF; tried to fix, but gave up and sent email 20260520; no response as of 20260807
 257767	premature EOF; total mess; sent email 20260521; portmgr@; now argument TODO
 #257465	see man
 257261	needs makepatch
-257188	no valid patches; needs rebase; sent email 20260614; no response 20260628
+257188	no valid patches; needs rebase; sent email 20260614; no response 20260807
 #255525	see bin
 #255261	see kern
 #254530	see bin
@@ -541,7 +534,7 @@
 245128	needs makepatch
 244871	premature EOF still TODO; cad/Slic3r
 #244079	see kern
-243859	premature EOF; mail/james; got partway done but not anything in files/; sent email 20260522 TODO
+243859	premature EOF; mail/james; got partway done but not anything in files/; sent email 20260522; no response 20260807
 243530	needs makepatch
 
 # all 2019
@@ -562,7 +555,7 @@
 # all 2018 TODO 20250312, 20250920
 
 #234469	see usb
-233900	no valid patches; reopened; sent email 20250920; got useless reply from pfg TODO
+233900	no valid patches; reopened; sent email 20250920; got confusing reply from pfg 20250921 TODO
 #233699	see kern
 233095	needs makepatch
 #232764	see bin
