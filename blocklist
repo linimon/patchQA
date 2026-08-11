@@ -6,18 +6,17 @@
 # bin
 
 #283964	not really "In Progress" TODO
+#283083	ENOEXIST; sent email to submitter 20251123; says "patch is only for 14"
 265685	premature EOF; abandoned exp-run TODO
 254530	ZFS from 2021
-251316	premature EOF
 #250511	"sample inputs"; committed; needs MFC 20260611
 246670	ENOEXIST even though it does; mix of src and ports; still 20260608; portmgr@
 #242983	ENOEXIST even after update; rebased but two patches conflict; sent email 20260614; got response "still looking at it"
 241684	only does one patch of two: usr.sbin/autofs/autofs/special_media TODO
 238129	mix of src and ports; controversy TODO
-235589	premature EOF even after rebase; context diff; TODO 20260611
 234775	premature EOF; now has inline patch TODO
 225451	multiple TODO
-#220246	just needs MFC
+#220246	just needs MFC 20260807
 #218925	see conf
 210537	looks wrong TODO; sent by mi@; complaint as of 20260630
 202058	premature EOF; two patches TODO
@@ -102,6 +101,7 @@
 
 # conf (reran 20260611)
 
+296544	ENOEXIST; two patches that need s@etc@libexec/rc@
 #283538	rmacklem patch for Linux; OK to ignore
 #278229	should be fixed 20260611 but you need to manually get two files from ~linimon/patches/
 273088	needs complete rework 20260608; controversy
@@ -110,6 +110,7 @@
 256658	rc.d; controversy
 253060	sendmail; controversy
 247447	termcap; ENOEXIST, correctly so; sent email 20260525; no response as of 20260807
+238855	needs rebase; this is just wrong TODO
 238735	rc.d; binmisc TODO
 236958	rc.d; have to ask about 'resume' TODO
 #236956	rc.d; should be fixed 20260617
@@ -205,35 +206,27 @@
 
 # doc (NB: has never been run by itself)
 
-280339	ENOEXIST; still 20260608
+#287662	needs rebase; failed; sent email 20260131; redone 20260502; skipped due to "in progress"
 266357	ENOEXIST; mix of doc and src
-247762	articles/ ?
-219723	TODO
-189701	articles/ TODO
-173710	needs rebase
-116588	patch for chapter.sgml
+247762	needs rebase to ... somewhere; context diff to .xml file
+219723	is this a change for doc, or for rc.d?  TODO
+173710	needs rebase; context diff of .xml file instead of _adoc
+116588	patch for chapter.sgml file instead of _adoc
 
 # kern
 
 283538	two patches TODO
-283272	premature EOF
 281020	mix of src and ports
-276209	simply did not apply
-275741	premature EOF
+275741	premature EOF; total mess
 272901	x-gzip; will take hours (includes floating files)
-269133	ENOEXIST, but it definitely does; failed even with rebase
-265714	premature EOF
-264729	premature EOF
-263406	premature EOF
-262179	rebase was insufficient for -CURRENT
+269133	ENOEXIST, but it definitely does; two patches; failed even with rebase
+263406	premature EOF but this was a completed but apparently abandoned exp-run; sent email 20260807
+262179	rebase was insufficient for -CURRENT; multiple
 262172	multiple stale patches
-261310	premature EOF
-259294	premature EOF
-255594	premature EOF
 255261	ZFS
 251433	no valid patches, even after upload; sent email 20260525, no response as of 20260807
-251347	ENOEXIST, but it definitely does
-251035	zfs
+251347	ENOEXIST, but it definitely does; context diff TODO
+251035	ZFS
 249245	ZFS
 248474	context diff; ENOEXIST; linimon rework ineffective TODO
 248352	premature EOF, even with rework; should be fixed 20260521; nope TODO
@@ -380,10 +373,11 @@
 
 # all 2026
 # now through 297287 20260805
+
 297072	needs makepatch
-297068	ENOEXIST
+297068	ENOEXIST; new patchfile
 #296804	no valid patches; patches marked obsolete so this is correct
-296544	ENOEXIST; two patches that need s@etc@libexec/rc@
+#296544	see conf
 296473	needs makepatch
 296417	needs makepatch
 296263	needs makepatch
@@ -418,7 +412,7 @@
 288059	multiple; yuri@ TODO
 288014	needs makepatch
 287834	multiple; now premature EOF; good test case for it 20260807 TODO
-#287662	doc; needs rebase; failed; sent email 20260131; redone 20260502; skipped due to "in progress"
+#287662	see doc
 287437	needs makepatch
 287261	needs makepatch
 287215	needs makepatch
@@ -434,7 +428,7 @@
 
 #283538	see kern
 #283227	tree-wide; does not match; now "In Progress"; sent email asking OBE? 20260707; replied "keep it open"
-#283083	ENOEXIST; sent email to submitter 20251123; says "patch is only for 14"
+#283083	see bin
 282797	needs makepatch
 282403	needs makepatch
 281207	needs makepatch
@@ -517,7 +511,7 @@
 #251347	see kern
 #251035	see kern
 250845	needs makepatch
-#250511	bin; now mfc-stable14
+#250511	see bin
 250489	needs makepatch; danfe@
 #249461	see bin
 #248474	see kern
@@ -542,12 +536,12 @@
 #241684	see bin
 #241563	see kern
 239891	needs makepatch; multiple
-239266	ENOEXIST even after rebase; confusing response from Mark Millard TODO
-238855	needs rebase; this is just wrong TODO
+239266	ENOEXIST even after rebase; confusing response from Mark Millard 20260523 TODO
+#238855	see conf
 #238735	see conf
 #238398	see kern
 #238129	see bin
-237213	multiple new ports
+237213	multiple new ports; sent email 20260718; no response yet
 240492	no valid patches; x11@; this is correct.
 #238232	see bin
 #234622	see kern
@@ -564,7 +558,7 @@
 
 # all 2017: ignoring duplicates, of which there are many
 
-232541	after rebase, premature EOF; hrs; got response from crest TODO
+232541	after rebase, premature EOF; hrs; response from crest 20260506 has not been answered as of 20260807
 #231591	see conf
 231390	2 of them need makepatch; multiple patches; hrs
 228521	no valid patches; all obsolete; this is correct.
@@ -575,7 +569,7 @@
 #218447	see conf
 #217607	see kern
 #216552	see kern
-216469	TODO?  rc.d for individual port 20260608?
+216469	rc.d for individual port sysutils/ezjail; no maintainer response since 20170125, but maintainer PR 20260701, so sent email 20260807
 216050	2 patches; first needs make makepatch TODO
 
 # all 2016, minus duplicates
@@ -592,7 +586,6 @@
 192540	target did not match; yuri@
 191790	premature EOF; portmgr@
 #189854	see conf
-#189701	see doc
 #188008	see bin
 
 # all 2013, minus duplicates
