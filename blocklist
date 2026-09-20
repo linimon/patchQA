@@ -372,8 +372,22 @@
 144109	context diff; file no longer exists; confirmed 20260611
 
 # all 2026
-# now through 297287 20260805
+# now through 298697 20260920
 
+298481	unable to reason
+298469	ENOEXIST but looks like it does TODO
+298462	needs makepatch
+298408	unable to reason TODO
+298390	premature EOF TODO
+298358	needs makepatch
+298316	xz file; cannot be uploaded due to massive size; just left a note
+298176	premature EOF TODO
+298139	ENOEXIST TODO; deleted file
+298136	unable to reason; ENOEXIST TODO
+298016	ENOEXIST TODO
+297998	needs makepatch
+297865	unidiff; sent email 20260829; answered, but still unidiff TODO
+297297	needs makepatch
 297072	needs makepatch
 297068	ENOEXIST; new patchfile
 #296804	no valid patches; patches marked obsolete so this is correct
