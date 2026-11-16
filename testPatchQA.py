@@ -139,6 +139,7 @@ if ( False ):
 #'&resolution=---'
 #
 # just one year.
+# incremental was '&v2=2026-11-08'
 # https://bugs.freebsd.org/bugzilla/buglist.cgi?chfield=%5BBug%20creation%5D&chfieldto=Now&f1=attachments.ispatch&f2=creation_ts&f3=creation_ts&list_id=811267&o1=equals&o2=greaterthaneq&o3=lessthan&order=Importance&query_format=advanced&resolution=---&v1=1&v2=2024-01-01&v3=2025-01-01
 bugParms = \
 '&f1=attachments.ispatch' \
