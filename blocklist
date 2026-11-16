@@ -372,31 +372,79 @@
 144109	context diff; file no longer exists; confirmed 20260611
 
 # all 2026
-# now through 297287 20260805
+# now through 300811 20261115
 
-297072	needs makepatch
+300809	tried to fix but could not completely; sent email
+300746	no valid patches; context diff; TODO
+300710	ENOSUCHFILE
+300656	needs makepatch
+300649	needs rebase and makepatch
+300542	changed to ports; needs makepatch; still context diff
+300537	did not apply; .orig; TODO check
+300490	needs makepatch
+300454	ENOSUCHFILE
+300259	needs makepatch; two patches
+300174	ENOSUCHFILE
+#300076	still did not apply TODO; assigned to markj
+#300069	no valid patches; this is correct.
+#300004	no valid patches; this is correct.
+299991	needs makepatch
+#299893	no valid patches; this is correct.
+299733	needed rebase; context diff; should be fixed 20261108; is not; TODO
+299695	ENOSUCHFILE; context diff
+299635	needs makepatch
+299588	premature EOF TODO
+299291	applied ok manually; let des and mi sort it out; des wants it on phab TODO test case
+299224	ENOEXIST mass hrs@ TODO
+299222	needs makepatch
+299150	needs makepatch
+299014	no valid patches TODO
+299005	needs rebase, but also one commit behind; just sent mail 20261009; no response 20261108
+298922	ENOEXIST
+298879	needs makepatch
+298851	premature EOF TODO
+298758	needs makepatch
+298748	needs makepatch
+298563	premature EOF TODO
+298462	needs makepatch
+298418	premature EOF TODO
+#298316	xz file; not a patch; cannot be uploaded due to massive size; just left a note
+298279	premature EOF TODO
+297988	no valid patches TODO
+297935	premature EOF TODO
+297910	no valid patches TODO
+297865	unidiff; sent email 20260829; answered, but still unidiff TODO
+297816	ENOEXIST TODO
+297596	ENOEXIST TODO
+297420	premature EOF TODO
+297396	ENOSUCHFILE TODO
+297297	needs makepatch
 297068	ENOEXIST; new patchfile
-#296804	no valid patches; patches marked obsolete so this is correct
+296789	needs makepatch
+296591	premature EOF TODO
 #296544	see conf
-296473	needs makepatch
 296417	needs makepatch
 296263	needs makepatch
 296064	all three have to be applied in sequence; TODO confirm that they really are 20260801
 295864	needs makepatch; adamw@
 295845	needs makepatch
+295838	premature EOF TODO
 295640	premature EOF; two patches; confusing; TODO
+295636	premature EOF TODO
+295585	ENOSUCHFILE TODO
 295222	needs makepatch
-294847	needs makepatch
+294456	premature EOF TODO
 294452	needs makepatch
-294243	no valid patches; failed manually too; sent email 20260427; no response as of 20260807
-294086	needs makepatch; danfe@
+294243	no valid patches; failed manually too; sent email 20260427; no response as of 20260807, 20261108
+294007	ENOSUCHFILE TODO
+293765	premature EOF TODO
+293461	no valid patches TODO
 293391	needs makepatch
 293319	mix of ports and src
 293225	needs makepatch
-293188	now applies but has stray patch; notified submitter 20260502; no response as of 20260807
+293188	now applies but has stray patch; notified submitter 20260502; no response as of 20260807, 20261108
 #293157	no valid patches; this is correct, the attachment was marked obsolete
 292966	needs makepatch; in addition, one entire file; dafuq?; sent email 20260625; replied but confusing
-292618	needs makepatch
 
 # all 2025 (mostly ports)
 
@@ -414,7 +462,7 @@
 287834	multiple; now premature EOF; good test case for it 20260807 TODO
 #287662	see doc
 287437	needs makepatch
-287261	needs makepatch
+287261	needs makepatch NOT FOUND 20261115 TODO
 287215	needs makepatch
 287051	needs makepatch
 285706	mix of src and ports
