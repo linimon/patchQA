@@ -380,7 +380,7 @@
 300656	needs makepatch
 300649	needs rebase and makepatch
 300542	changed to ports; needs makepatch; still context diff
-300537	did not apply; .orig; TODO check
+300537	did not apply; .orig removed; still fails TODO
 300490	needs makepatch
 300454	ENOSUCHFILE
 300259	needs makepatch; two patches
@@ -398,7 +398,7 @@
 299224	ENOEXIST mass hrs@ TODO
 299222	needs makepatch
 299150	needs makepatch
-299014	no valid patches TODO
+299014	no valid patches; octet-stream; TODO
 299005	needs rebase, but also one commit behind; just sent mail 20261009; no response 20261108
 298922	ENOEXIST
 298879	needs makepatch
@@ -409,12 +409,12 @@
 298462	needs makepatch
 298418	premature EOF TODO
 #298316	xz file; not a patch; cannot be uploaded due to massive size; just left a note
-298279	premature EOF TODO
-297988	no valid patches TODO
+298279	needs makepatch
+297988	no valid patches (x-xz); TODO
 297935	premature EOF TODO
-297910	no valid patches TODO
+#297910	no valid patches; this is correct
 297865	unidiff; sent email 20260829; answered, but still unidiff TODO
-297816	ENOEXIST TODO
+297816	ENOEXIST; two patches TODO
 297596	ENOEXIST TODO
 297420	premature EOF TODO
 297396	ENOSUCHFILE TODO
@@ -438,7 +438,7 @@
 294243	no valid patches; failed manually too; sent email 20260427; no response as of 20260807, 20261108
 294007	ENOSUCHFILE TODO
 293765	premature EOF TODO
-293461	no valid patches TODO
+293461	no valid patches; sent email 20261116
 293391	needs makepatch
 293319	mix of ports and src
 293225	needs makepatch
