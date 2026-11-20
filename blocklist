@@ -102,6 +102,7 @@
 # conf (reran 20260611)
 
 296544	ENOEXIST; two patches that need s@etc@libexec/rc@
+#290173	see conf XXX TODO
 #283538	rmacklem patch for Linux; OK to ignore
 #278229	should be fixed 20260611 but you need to manually get two files from ~linimon/patches/
 273088	needs complete rework 20260608; controversy
@@ -375,12 +376,12 @@
 # now through 300811 20261115
 
 300809	tried to fix but could not completely; sent email
-300746	no valid patches; context diff; TODO
+#300746	no valid patches; context diff; should be fixed 20261116
 300710	ENOSUCHFILE
 300656	needs makepatch
 300649	needs rebase and makepatch
 300542	changed to ports; needs makepatch; still context diff
-300537	did not apply; .orig removed; still fails TODO
+#300537	did not apply; .orig removed; should be fixed 20261116
 300490	needs makepatch
 300454	ENOSUCHFILE
 300259	needs makepatch; two patches
@@ -390,54 +391,51 @@
 #300004	no valid patches; this is correct.
 299991	needs makepatch
 #299893	no valid patches; this is correct.
-299733	needed rebase; context diff; should be fixed 20261108; is not; TODO
-299695	ENOSUCHFILE; context diff
+#299733	needed rebase; context diff; should be fixed 20261115
 299635	needs makepatch
-299588	premature EOF TODO
+#299588	premature EOF; was actually conflict; should be fixed 20261116
 299291	applied ok manually; let des and mi sort it out; des wants it on phab TODO test case
-299224	ENOEXIST mass hrs@ TODO
+299224	ENOEXIST mass hrs@ TODO; giant mess
 299222	needs makepatch
 299150	needs makepatch
 299014	no valid patches; octet-stream; TODO
 299005	needs rebase, but also one commit behind; just sent mail 20261009; no response 20261108
 298922	ENOEXIST
 298879	needs makepatch
-298851	premature EOF TODO
+#298851	premature EOF; was whitespace; should be fixed 20261116
 298758	needs makepatch
 298748	needs makepatch
-298563	premature EOF TODO
+#298563	was premature EOF; now merged, should be fixed 20261116
 298462	needs makepatch
-298418	premature EOF TODO
+#298418	premature EOF; now OBE 20261116
 #298316	xz file; not a patch; cannot be uploaded due to massive size; just left a note
 298279	needs makepatch
 297988	no valid patches (x-xz); TODO
-297935	premature EOF TODO
+#297935	premature EOF; was 2 obsolete (but only one really) attachment plus patch; should be fixed 20261116
 #297910	no valid patches; this is correct
-297865	unidiff; sent email 20260829; answered, but still unidiff TODO
-297816	ENOEXIST; two patches TODO
-297596	ENOEXIST TODO
-297420	premature EOF TODO
-297396	ENOSUCHFILE TODO
+#297865	unidiff; sent email 20260829; answered, but still unidiff; actually, this is a diff to an external file
+297816	ENOEXIST; two patches; first is way off, but mi@; sent mail 20261116; ignore for now
+297596	ENOEXIST (patch-Makefile); sent email 20261116
+#297420	premature EOF; should be fixed 20261116
 297297	needs makepatch
-297068	ENOEXIST; new patchfile
+297068	ENOEXIST; new patchfile; sent email 20261117
 296789	needs makepatch
-296591	premature EOF TODO
+#296591	premature EOF; should be fixed
 #296544	see conf
 296417	needs makepatch
 296263	needs makepatch
 296064	all three have to be applied in sequence; TODO confirm that they really are 20260801
 295864	needs makepatch; adamw@
 295845	needs makepatch
-295838	premature EOF TODO
+295838	premature EOF; out of date; sent email 20261117
 295640	premature EOF; two patches; confusing; TODO
-295636	premature EOF TODO
-295585	ENOSUCHFILE TODO
+#295636	premature EOF; cpet; should be fixed
+#295585	ENOSUCHFILE; closed/superceded 20261120
 295222	needs makepatch
-294456	premature EOF TODO
+#294456	premature EOF; told to resubmit 20261120
 294452	needs makepatch
 294243	no valid patches; failed manually too; sent email 20260427; no response as of 20260807, 20261108
-294007	ENOSUCHFILE TODO
-293765	premature EOF TODO
+#293765	premature EOF; fixed as of 20261120
 293461	no valid patches; sent email 20261116
 293391	needs makepatch
 293319	mix of ports and src
@@ -449,9 +447,8 @@
 # all 2025 (mostly ports)
 
 291828	patch to src, not ports TODO
-#291500	fixed patch but problem not solved; SEP
 #290653	no valid patches; this is correct
-290315	multiple; now No Valid Patches; needs makepatch
+290315	multiple; context diffs; now No Valid Patches; needs makepatch
 #290173	see conf
 290116	needs makepatch
 288755	needs makepatch
